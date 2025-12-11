@@ -149,6 +149,20 @@ void main()
     else
         printf("\n\nNo Error is found in the received frame.");
 }
+
+Input 
+Enter the message code in binary: 11100101
+
+Output 
+The generator polynomial is: 110101
+CRC CCITT code to Transmit is: 1110010101011
+
+Input 
+Enter the received frame: 1110010101011
+
+Output 
+No Error is found in the received frame.
+          
         </textarea>
       </div>
 
@@ -216,6 +230,15 @@ void main()
 
     printf("\n\nThe Destuffed Data is:\n\n%s", destf);
 }
+
+Input 
+Enter the bit stream in binary: 11111
+
+Output 
+The Stuffed Data is: 0111111011111001111110
+  
+The Destuffed Data is: 11111
+          
         </textarea>
       </div>
 
@@ -273,6 +296,16 @@ void main()
 
     printf("\n\nThe Destuffed Data is:\n%s", destf);
 }
+
+Input 
+Enter the Data in character: mvjce
+
+Ouput 
+The Stuffed Data is:
+DLESTXmvjceDLEETX
+
+The Destuffed Data is:
+mvjce
         </textarea>
       </div>
 
@@ -332,6 +365,34 @@ int main()
     printf("\n\n");
     return 0;
 }
+
+Input 
+Enter the number of nodes: 3
+
+Enter the cost matrix:
+0 1 1
+1 0 99
+1 99 0
+
+Output 
+State value for router 1 is:
+
+Node 1 via 1 Distance 0
+Node 2 via 2 Distance 1
+Node 3 via 3 Distance 1
+
+State value for router 2 is:
+
+Node 1 via 1 Distance 1
+Node 2 via 2 Distance 0
+Node 3 via 1 Distance 2
+
+State value for router 3 is:
+
+Node 1 via 1 Distance 1
+Node 2 via 1 Distance 2
+Node 3 via 3 Distance 0
+          
         </textarea>
       </div>
 
@@ -377,6 +438,24 @@ int main()
 
     return 0;
 }
+
+Input 
+Enter bucket size, outgoing rate and number of inputs: 100 10 2
+Enter the incoming packet size: 10
+          
+Output
+Incoming packet size 10
+Bucket buffer size 10 out of 100
+After outgoing 0 packets left out of 100 in buffer
+          
+Input 
+Enter the incoming packet size: 50
+
+Output
+Incoming packet size 50
+Bucket buffer size 50 out of 100
+After outgoing 40 packets left out of 100 in buffer
+          
         </textarea>
       </div>
 
@@ -420,6 +499,19 @@ int main()
 
     return 0;
 }
+
+Input           
+Enter window size: 3
+Enter number of frames to transmit: 5
+Enter 5 frames: 12 5 89 4 6 
+
+Output 
+With sliding window protocol, the frames will be sent in the following manner
+After sending 3 frames at each stage, sender waits for acknowledgement sent by receiver
+12 5 89
+Acknowledgement of above frames sent is received by sender
+4 6 
+Acknowledgement of above frames sent is received by sender
         </textarea>
       </div>
 
